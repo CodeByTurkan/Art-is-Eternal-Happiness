@@ -1,0 +1,459 @@
+:root{
+    --white:#fff;
+    --green:#53d153;
+    --gray:#f2f1f1;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bggreen h2 {color:#207b20;}
+.bggreen hr{background:#207b20 ;}
+.bggreen h5 { color: #2b9b2b }
+
+.bggreen{ background-color: var(--green);}
+.bgwhite{ background-color: var(--white);}
+.bggray{ background-color: var(--gray);}
+.txtgreen{color: var(--green);} 
+.txtwhite{color: var(--white);} 
+.txtgray{color: var(--gray);} 
+
+header{
+   height: 100vh;
+   background: url('../img/background\ \(1\).png') center/cover;
+   text-align: center;
+   /* align-items: center; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+menu li {
+    list-style: none;
+    padding: 5px;
+}
+menu li a{
+    font: bold 1em 'Proxima Nova',sans-serif;
+    text-decoration: none;
+    color: var(--white);
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+}
+#search input, #search button{
+    outline: none;
+    border: none;
+    height: 27px;
+    background-color: #ffffff80;
+    padding: 0 1em;
+}
+
+#search input{border-radius: 1em 0 0 1em;}
+#search button {border-radius: 0 1em 1em 0;}
+#search button img{ height: 11px;}
+.content h1{
+    font: 700 2em 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+.content button{
+    font-size:1em "Proxima Nova", sans-serif ;
+    width: 104px;
+    height: 25px;
+    border-radius: 12px;
+    border: none;
+    margin: 10px;
+   
+}
+.link{padding: 10px;
+}
+/* div bloxk level oldugu ucun width 100%di, so paddin verende uzanib hecmi ordan tutur, icerdeki elelmenti balacalasdirmir. /generally paddin elmentin etrafina space vermek ucundu, elementi balacalasdirmir. padding inside psace verir, margin outside, marginesasen elemntinf diger xarici elemntlerle elaqesine baxir, ver diger xarici elementlere tesir ede bilir, paddin ise ancaq elemnte ve onu borderine.
+
+Margin: External spacing between the element and other elements.
+Padding: Internal spacing between the content and the element's border/edge.
+Use margin to control layout spacing and alignment, and use padding to control the spacing inside the element.
+
+eger divin stabil widthi olarsa padding verende element sixilir amma yenede size deyismir, hetta indi gordum divden cixada bilir, headinge axir.
+*/
+
+.link a{
+    display: inline-block;
+    padding: 5px 16px;
+    text-decoration: none;
+    text-transform: lowercase;
+    font:300 1em "Proxima Nova",sans-serif;
+    color: #111111;
+    background-color: #ffffff70;
+    border-radius: 13px;  
+}  
+
+main section{
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+h2 {
+    font: 1.2em 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #818181;
+}
+h3 {
+    font: bold 1.5em 'Proxima Nova';
+    color: #818181;
+    padding: 20px;
+}
+.row h4{ 
+    font: 1em 'Montserrat' ;
+    color: #dddddd;
+}
+.sponsors h4{
+    color: black;
+    padding-top:30px ;
+}
+.sponsors hr{background: black;}
+/* hr color is changed with background color */
+
+h5 {
+    font: 1em 'Myriad Pro';
+    color: #b3b3b3;
+}
+
+hr{
+    display: inline-block;
+    width: 43px;
+    height: 2px;
+    background-color: #818181;
+    border: none;
+    margin: 10px 0;
+}
+.iconfr{
+    display: flex;
+    /* background felxdi onun icindeki element yeni i, ona flex verende ve marign auto elemnte verende avotmaik ortaya felir. ; */
+    width: 142px;
+    height: 142px;
+    border-radius: 30px;
+    background-color: #e0f3e0;
+    margin: auto;
+}
+.iconfr i{
+    margin: auto;
+    color:#53d153;
+    width: 200px;
+    font-size: 4.6em;
+}
+#art3{
+    padding: 48px 0;}
+#art3 article{
+    padding: 24px 15px;
+    
+}
+
+.btn1{
+    display: inline-block;
+    margin-top: 30px;
+    font: bold 1em "Proxima Nova";
+    color: #ffffff;
+    border-radius: 1em;
+    background-color: #53d153;
+    padding: 7px 20px;
+    text-decoration: none;
+}
+.btn2{
+    font: 1em 'Proxima Nova';
+    background: #2b9b2b;
+    color: #fff;
+    padding: 8px 25px;
+    border-radius:20px;
+    text-decoration: none;
+}
+#buttons{
+    padding: 50px 0 0 0;
+    display: flex;
+   justify-content: center;
+
+}
+#buttons button{
+    font: 1em 'Proxima Nova';
+    color: #2b9b2b;
+    background: #fff;
+    border:1px solid #2b9b2b ;
+    padding: 8px 25px;
+    
+    /* background biz buttons yox button veririk cunki bize buttons'u ehateliyeni yox, button'u ehateliyen lazimdi */
+}
+#buttons button:first-child{ border-radius: 1em 0 0 1em;}
+#buttons button:last-child{ border-radius: 0 1em 1em 0;}
+
+#buttons .active, #buttons button:hover{
+    background: #2b9b2b;
+    color: #fff;
+}
+
+#gallery{padding: 50px 0;}
+
+#gallery img{
+    width: 100%;
+    /* yeni verildiyi sahening hasmisini tutsun demmekdi */
+    padding: 15px;
+}
+
+.feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 20px 0;
+}
+
+.feedback p{
+    flex: 0 0 50%;
+}
+.feedback i{
+    flex: 0 0 25%;
+    color: #e0dfdf;
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    object-fit: cover;
+    margin: 5px;
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text
+{text-align: initial;}
+
+.clients img{
+    height: 40px;
+    /* width: 40%; */
+    margin: auto;
+    margin: 30px;
+}
+
+
+.graybtn .btn2{
+    background:#dddcdc;
+    color:#a59d9d;
+}
+
+.team{
+    text-align: center;
+    padding: 34px;
+}
+.member1{
+    padding: 17px 45px;
+}
+
+.team img{
+    border-radius: 62px;
+    width: 124px;
+    height: 124px;
+    margin: 10px;
+    display: block;
+    /*  image and hr were side to side, to fix this problem, i gave iamge block property to make hr fell down then gave all text center and img picture auto  */
+    margin: auto;
+}
+
+.team hr{
+    display: none
+}
+.team h4{color: var(--white);}
+.fa-square-threads{color: black;}
+.fa-square-behance{color: #0061ff;}
+.fa-google-plus-g{color: red;}
+.icons{
+    display: inline-block;
+    width: 84px;
+    height: 28px;
+    border-radius: 14px;
+    background-color: #ffffffb6;
+    padding:5px;
+    margin: 10px;
+}
+.team-section{padding-bottom: 0;}
+.bgdarkergreen{
+    background: #3eba3e;
+    padding: 25px;
+}
+.bgdarkergreen .btn1{
+    margin: 0;
+}
+
+.row{
+    background: #333;
+    text-align: center;
+}
+
+.col33{
+    padding: 30px 40px;
+}
+footer p{
+    font: 16px "Proxima Nova";
+    color: #cccccc;
+
+}
+.post1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.post1 img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0 10px;
+    /* when the image is not background but still you need to shape the form of the image! */
+}
+.post1 a{
+    border-radius: 3px;
+    background-color: #53d153;
+    font: .8em "Montserrat";
+    color: #fff;
+    padding: 2px;
+    text-decoration: none;
+}
+.contact a{
+    display: block;
+    font: .9em "Proxima Nova";
+    color: #ccc;
+    text-decoration: none;
+}
+.contact{padding-bottom: 20px;}
+.flex-form{
+    width: 70%;
+    /* when we work with width , we wshould mainly use margin auto to put elemnts center left or right */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+input, textarea{
+    background-color: #444;
+    border: 0;
+}
+input::placeholder, textarea::placeholder{
+    padding: 0 10px;
+    font: 0.9em "Proxima Nova";
+}
+
+footer button{
+    background-color: #2b9b2b;
+    font: 0.9em "Proxima Nova";
+    border: 0;
+    border-radius: 0 0 4px 4px ;
+    color: white;
+    padding: 8px;
+}
+.sponsors{
+    background: #212121;
+    text-align: center;
+}
+.sponsor img{
+    margin: 30px;
+}
+.signature{
+    background: #111111;
+    color: white;
+    text-align: center;
+}
+
+@media  screen and (min-width:768px){
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+    }
+    menu{
+        display: flex;
+        order: -1;
+    }
+    menu, #search{
+        flex: 0 1 40%;
+    }
+    #search{justify-content: end;}
+    .logo{
+        padding-top: 5px;
+        /* padding-right: 100px; */
+    }
+    
+    menu li a.active, menu li a:hover{
+        border-top:5px solid var(--green)
+        /* bu yasili nece blaca eliyim? */
+    }
+    .content h1{
+        font-size: 3.4em;
+        /* id it is bigger than 3.4 we write it on desktop becuase of responsivlik */
+        margin: 20px;
+    }
+    .content button{
+        font-size: 1.5em ;
+        width: 208px;
+        height: 47px;
+        border-radius: 23px;
+        margin: 20px;
+    }
+
+    h1 {  font-size: 3.4em; }
+    
+    #art3{
+        display: flex;
+        justify-content: center;
+    }
+   #art3 article{
+    flex: 0 1 380px;}
+  
+    #gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        width: 950px;
+    }
+    #gallery img{
+        width: 160px;
+        height: 160px;
+    }
+
+    .clients{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 870px;
+        margin: auto;
+        margin-top:70px ;
+        margin-bottom: 50px;
+    }
+    .team{
+        display: flex;
+        justify-content: center;
+
+    }
+    .team hr{
+        display: inline-block;
+        width: 2px;
+        height: 77px;
+        background-color: #1f7b1f;
+        border: none;
+        margin: 10px 0;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .col33{width: 33.33%;}
+    
+}
+
